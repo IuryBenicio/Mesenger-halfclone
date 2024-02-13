@@ -80,7 +80,7 @@ function handleLogin(evento) {
   login.style.display = "none";
   chat.style.display = "flex";
 
-  websocket = new WebSocket("ws://localhost:8080");
+  websocket = new WebSocket("wss://backend-mymensage.onrender.com");
 
   websocket.onmessage = processMesage;
 }
